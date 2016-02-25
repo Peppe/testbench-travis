@@ -17,7 +17,7 @@ public class BasicIT extends TestBenchTestCase {
         getDriver().get("http://localhost:8080/");
 
         TextFieldElement nameInput = $(TextFieldElement.class).first();
-        nameInput.setValue("Jeff");
+        nameInput.setValue("Joe");
         ButtonElement helloButton = $(ButtonElement.class).caption("Click Me")
                 .first();
         helloButton.click();
