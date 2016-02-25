@@ -137,6 +137,13 @@
 					<stopPort>8081</stopPort>
 					<stopKey>foo</stopKey>
 					<stopWait>5</stopWait>
+					<!-- Prevent Jetty from scanning the classpath. -->
+					<!--Speeds up startup time significantly -->
+					<webAppConfig>
+						<webInfIncludeJarPattern>^$</webInfIncludeJarPattern>
+						<containerIncludeJarPattern>^$</containerIncludeJarPattern>
+					</webAppConfig>
+
 				</configuration>
 			</plugin>
 		</plugins>
