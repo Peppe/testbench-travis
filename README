@@ -1,0 +1,5 @@
+Example on how you can run TestBench tests using Travis.
+
+Setup: 
+1. Go to Travis and add a secure environment variable TESTBENCH_LICENSE
+containing your TestBench license
