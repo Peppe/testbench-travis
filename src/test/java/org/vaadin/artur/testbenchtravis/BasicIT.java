@@ -23,6 +23,6 @@ public class BasicIT extends TestBenchTestCase {
         helloButton.click();
 
         LabelElement outputLabel = $(LabelElement.class).first();
-        Assert.assertEquals("Thanks Jeff, it works!", outputLabel.getText());
+        Assert.assertEquals("Fail Jeff, it doesn't work!", outputLabel.getText());
     }
 }
